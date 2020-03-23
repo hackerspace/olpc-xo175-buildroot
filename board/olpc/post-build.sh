@@ -17,3 +17,8 @@ rm -f $TARGET_DIR/etc/systemd/system/sockets.target.wants/systemd-networkd.socke
 rm -rf $TARGET_DIR/var/log/journal
 
 install -m 0644 -D $BOARD_DIR/olpc.fth $TARGET_DIR/boot/olpc.fth
+install -m 0644 -D $BOARD_DIR/zImage.xo $TARGET_DIR/boot/zImage.xo
+install -m 0644 -D $BOARD_DIR/xo1.rom $TARGET_DIR/
+install -m 0644 -D $BOARD_DIR/xo175.rom $TARGET_DIR/
+install -m 0644 -D $BOARD_DIR/xo4.rom $TARGET_DIR/
+install -m 0644 -D $BOARD_DIR/ariel.rom $TARGET_DIR/
