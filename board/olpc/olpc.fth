@@ -25,7 +25,7 @@ then
 root-device " architecture" get-property dend  if  0 0  else  1-  then
 " OLPC" $=  if  boot-file " fbcon=font:TER16x32 vt.color=0xf0 " $cat2 to boot-file  then
 
-boot-file " console=tty0 rootwait" $cat2 to boot-file
+boot-file " console=tty0 ignore_loglevel rootwait" $cat2 to boot-file
 
 : boot.xo
    " 1 to olpc-compat?" evaluate
